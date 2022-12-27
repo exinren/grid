@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<div class="wrapper">
+  <div class="one"></div>
+  <div class="two"></div>
+  <div class="three"></div>
+  <div class="four"></div>
+  <div class="five"></div>
+  <div class="six"></div>
+</div>
+</body>
+<style>
+.wrapper {
+  display: grid;
+  /*  声明了三列，宽度分别为 200px 100px 200px */
+  grid-template-columns: 200px 100px 200px;
+  grid-gap: 100px; /* 行间距 */
+  /*  声明了两行，行高分别为 50px 50px  */
+  grid-template-rows: 50px 50px;
+}
+.one {
+    background: chartreuse;
+}
+.two {
+    background: darkgoldenrod;
+}
+.three{
+    background: aqua;
+}
+.four{
+    background: aliceblue;
+}
+.five{
+    background: beige;
+}
+.six {
+    background: aquamarine;
+}
+</style>
+</html>
