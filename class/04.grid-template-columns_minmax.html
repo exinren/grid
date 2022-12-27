@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<div class="wrapper">
+  <div class="one"></div>
+  <div class="two"></div>
+  <div class="three"></div>
+  <div class="four"></div>
+  <div class="five"></div>
+  <div class="six"></div>
+  <div class="six"></div>
+  <div class="six"></div>
+  <div class="six"></div>
+  <div class="six"></div>
+  <div class="six"></div>
+  <div class="six"></div>
+</div>
+</body>
+<style>
+.wrapper {
+    display: grid;
+    /* 第三个列宽最少也是要 300px，但是最大不能大于第一第二列宽的两倍。 */
+    grid-template-columns: 1fr 1fr minmax(300px, 2fr);
+    grid-gap: 5px;
+    grid-auto-rows: 50px;
+}
+.one {
+    background: chartreuse;
+}
+.two {
+    background: darkgoldenrod;
+}
+.three{
+    background: aqua;
+}
+.four{
+    background: aliceblue;
+}
+.five{
+    background: beige;
+}
+.six {
+    background: aquamarine;
+}
+</style>
+</html>
