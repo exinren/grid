@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<div class="wrapper-7">
+  <div class="header">葡萄</div>
+  <div class="content">龙虾</div>
+  <div class="sidebar">养鱼</div>
+  <div class="footer">西瓜</div>
+</div>
+</body>
+<style>
+    /*grid-template-areas:
+    "<grid-area-name> | . | none | ..."
+    "...";*/
+    /**
+    其中：
+      grid-area-name: 对应网格区域的名称。
+      .: 表示空的网格单元格。
+      none: 没有定义网格区域。
+     */
+    .wrapper-7 {
+        display: grid;
+        grid-template-columns: 120px  120px  120px;
+        grid-template-rows: 200px 50px 130px 150px;
+        grid-gap: 10px;
+        /* .表示空单元单个元， 如下的： 表格两行，三列。 第一行：一个空单元格，葡萄占两个单元格；第二行可以和第三行合并，龙虾占用有两行一列，养鱼占用两行两列。 第三行 西瓜占=三个单元格*/
+        /* grid-template-areas中声明的变量，与子项中grid-area呼应。 */
+        grid-template-areas:
+                ". 葡萄 葡萄"
+                "龙虾 养鱼 养鱼"
+                "龙虾 养鱼 养鱼"
+                "西瓜 西瓜 西瓜";
+        color: #444;
+    }
+    .header {
+        grid-area: 葡萄;
+        background: aquamarine;
+    }
+    .sidebar {
+        grid-area: 养鱼;
+        background: aqua;
+    }
+    .content {
+        grid-area: 龙虾;
+        background: coral;
+    }
+    .footer {
+        grid-area: 西瓜;
+        background: brown;
+    }
+</style>
+</html>
