@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="wrapper-10">
+    <div class="one">one</div>
+    <div class="two">two</div>
+    <div class="three">three</div>
+    <div class="four">four</div>
+    <div class="five">five</div>
+    <div class="six">six</div>
+    <div class="five">five</div>
+    <div class="six">six</div>
+</div>
+</body>
+<style>
+    .wrapper-10 {
+        height: 600px;
+        display: grid;
+        grid-template: 100px 100px 100px/100px 100px 100px;
+        /*整个内容区域在容器里面的水平位置， justify-content: stretch | start | end | center | space-between | space-around | space-evenly; */
+        align-content: space-evenly;
+    }
+    .one {
+        background: chartreuse;
+    }
+    .two {
+        background: darkgoldenrod;
+    }
+    .three{
+        background: aqua;
+    }
+    .four{
+        background: aliceblue;
+    }
+    .five{
+        background: beige;
+    }
+    .six {
+        background: aquamarine;
+    }
+</style>
+</html>
