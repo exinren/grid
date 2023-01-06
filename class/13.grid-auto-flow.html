@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="wrapper-13">
+    <div class="one">one</div>
+    <div class="two">two</div>
+    <div class="three">three</div>
+    <div class="four">four</div>
+    <div class="five">five</div>
+    <div class="six">six</div>
+    <div class="five">five</div>
+    <div class="six">six</div>
+    <div class="five">five</div>
+    <div class="item-8">item-8</div>
+    <div class="item-9">item-9</div>
+</div>
+</body>
+<style>
+    .wrapper-13 {
+        /**
+        属性控制着自动布局算法怎样运作，精确指定在网格中被自动布局的元素怎样排列。
+            row:默认值。没有指定位置的网格依次水平排列优先。
+            column: 没有指定位置的网格依次垂直排列优先。
+            dense: 稠密的意思。如果有设置，则表示自动排列启用“密集”打包算法。如果稍后出现的网格比较小，则尝试看看前面有没有合适的地方放置，使网格尽可能稠密紧凑。此属性值仅仅改变视觉顺序，会导致DOM属性和实际呈现顺序不符合，这对于可访问性是不友好的，建议谨慎使用。
+            */
+        display: grid;
+        grid-template-columns: 100px 200px 100px;
+        grid-template-rows: 50px 60px 70px;
+        grid-auto-flow: column dense;
+        grid-gap: 5px;
+        grid-auto-rows: 150px;
+    }
+    .one {
+        background: chartreuse;
+    }
+    .two {
+        background: darkgoldenrod;
+    }
+    .three{
+        background: aqua;
+    }
+    .four{
+        background: aliceblue;
+    }
+    .five{
+        background: beige;
+    }
+    .six {
+        background: aquamarine;
+    }
+    .item-8 {
+        background-color: #d0e4a9;
+        grid-row-start: 4;
+        grid-column-start: 2;
+    }
+
+    .item-9 {
+        background-color: #4dc7ec;
+        grid-row-start: 5;
+        grid-column-start: 3;
+    }
+</style>
+</html>
