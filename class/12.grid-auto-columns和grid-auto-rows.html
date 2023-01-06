@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="wrapper-12">
+    <div class="one">one</div>
+    <div class="two">two</div>
+    <div class="three">three</div>
+    <div class="four">four</div>
+    <div class="five">five</div>
+    <div class="six">six</div>
+    <div class="five">five</div>
+    <div class="six">six</div>
+    <div class="five">five</div>
+    <div class="item-8">item-8</div>
+    <div class="item-9">item-9</div>
+</div>
+</body>
+<style>
+    .wrapper-12 {
+        display: grid;
+        grid-template-columns: 100px 100px;
+        grid-template-rows: 100px 100px;
+        grid-gap: 10px 20px;
+        /* 增多的第三行的宽 */
+        grid-auto-columns: 200px;
+        /* 第三行的高50， 第四行的高60，第五行的高70 */
+        grid-auto-rows: 50px 60px 70px;
+    }
+    .one {
+        background: chartreuse;
+    }
+    .two {
+        background: darkgoldenrod;
+    }
+    .three{
+        background: aqua;
+    }
+    .four{
+        background: aliceblue;
+    }
+    .five{
+        background: beige;
+    }
+    .six {
+        background: aquamarine;
+    }
+    .item-8 {
+        background-color: #d0e4a9;
+        grid-row-start: 4;
+        grid-column-start: 2;
+    }
+
+    .item-9 {
+        background-color: #4dc7ec;
+        grid-row-start: 5;
+        grid-column-start: 3;
+    }
+</style>
+</html>
