@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<div class="wrapper-15">
+  <div class="one item">one</div>
+  <div class="two item">two</div>
+  <div class="three item">three</div>
+  <div class="four item">four</div>
+  <div class="five item">five</div>
+  <div class="six item">six</div>
+</div>
+</body>
+<style>
+    /**
+      justify-self 属性设置单元格(项目)内容的水平位置（左中右）
+      stretch:表现为水平填充。
+      start:表现为网格水平尺寸收缩为内容大小，同时沿着网格线左侧对齐显示。
+      end:表现为网格水平尺寸收缩为内容大小，同时沿着网格线右侧对齐显示。
+      center：表现为网格水平尺寸收缩为内容大小，同时在当前网格区域内部水平居中对齐显示。
+
+     */
+    .wrapper-15 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+        grid-auto-rows: 100px;
+    }
+    .item {
+        justify-self: auto;
+    }
+    .one {
+        background: #19CAAD;
+    }
+    .two {
+        background: #8CC7B5;
+    }
+    .three {
+        background: #D1BA74;
+    }
+    .four {
+        background: #BEE7E9;
+    }
+    .five {
+        background: #E6CEAC;
+    }
+    .six {
+        background: #ECAD9E;
+    }
+</style>
+</html>
